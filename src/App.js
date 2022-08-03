@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { useFetchUsers } from "./components/customHooks/dataFetch";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./components/pages/Home";
@@ -8,7 +7,6 @@ import About from "./components/pages/About";
 import NotFound from "./components/pages/NotFound";
 
 const App = () => {
-  // const [data: users, error, isError, isLoading] = useFetchUsers();
   return (
     <div className="flex flex-col justify-between h-screen">
       <Navbar />
