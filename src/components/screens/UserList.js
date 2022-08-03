@@ -1,11 +1,9 @@
 import React from "react";
 import Spinner from "../assets/Spinner";
-import { useFetchUsers } from "../customHooks/dataFetch";
 import UserItem from "./UserItem";
 
-const UserList = () => {
-  const { data: users, error, isError, isLoading } = useFetchUsers();
-
+const UserList = ({ usersData }) => {
+  const { data: users, error, isError, isLoading } = usersData;
   return (
     <div>
       {isLoading ? (
